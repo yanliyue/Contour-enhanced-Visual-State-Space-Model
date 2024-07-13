@@ -19,7 +19,7 @@ When the model classifies the scenes in the image, the G-VMamba model focuses on
 
 The colors in the figure represent the contribution of different areas in the input image of a certain category to the model's prediction. Hues closer to red indicate a stronger influence of the area on the classification decision.
 
-The corresponding layers from which the CAMs were extracted are shown in parentheses. (a) Original Image, (b) ResNet 50 (backbone.layer4.2.bn3); (c) ResNeSt 50 (backbone.layer4.2.bn3), (d) Swin Transformer (backbone.norm3), (e) Rev-ViT (backbone.ln1), (f) RSMamba (backbone.pre norm), (g) VMamba (classifier.norm), (h) \textbf{G-VMamba} (classifier.norm).
+The corresponding layers from which the CAMs were extracted are shown in parentheses. (a) Original Image, (b) ResNet 50 (backbone.layer4.2.bn3); (c) ResNeSt 50 (backbone.layer4.2.bn3), (d) Swin Transformer (backbone.norm3), (e) Rev-ViT (backbone.ln1), (f) RSMamba (backbone.pre norm), (g) VMamba (classifier.norm), (h) G-VMamba (classifier.norm).
 <p align="center">
   <img src="figures/allCAM.png" alt="arch" width="80%">
 </p>
