@@ -1,7 +1,7 @@
 # Contour-enhanced-Visual-State-Space-Model
 G-VMamba: Contour-enhanced Visual State-Space Model for Remote Sensing Image Classification
 
-This repo is the PyTorch implementation of some works related to remote sensing tasks. A complete code implementation will be provided after the paper is officially accepted.
+This repo is the PyTorch implementation of some works related to remote sensing tasks. A complete code implementation will be provided after the paper is accepted.
 
 ## Introduction
 The current branch has been tested on Linux system, PyTorch 1.13.X and CUDA 11.6, supports Python 3.8+.
