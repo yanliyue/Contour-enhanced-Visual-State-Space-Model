@@ -11,7 +11,7 @@ The current branch has been tested on Linux system, PyTorch 1.13.X and CUDA 11.6
 * **Class activation map (CAM) visualization of the final normalization layer for [VMamba](https://github.com/MzeroMiko/VMamba) and G-VMamba Models’ classification of UC-Merced dataset images.**
 When the model classifies the scenes in the image, the G-VMamba model focuses on areas where the color (or brightness) of the image changes more significantly (red areas), such as the lane intersection position of the Overpass scene, the edge of the court in the Baseball diamond scene, and the airplane shadow and lawn border of the Airplane scene. (The model size is ‘Small’.)
 <p align="center">
-  <img src="figures/CAM1.png" alt="arch" width="60%">
+  <img src="figures/CAM1.png" alt="arch" width="35%">
 </p>
 
 * **Comparison of CAM visualizations using different methods on UC-Merced dataset.**
@@ -19,7 +19,7 @@ The colors in the figure represent the contribution of different areas in the in
 
 The corresponding layers from which the CAMs were extracted are shown in parentheses. (a) Original Image, (b) ResNet 50 (backbone.layer4.2.bn3); (c) ResNeSt 50 (backbone.layer4.2.bn3), (d) Swin Transformer (backbone.norm3), (e) Rev-ViT (backbone.ln1), (f) RSMamba (backbone.pre norm), (g) VMamba (classifier.norm), (h) \textbf{G-VMamba} (classifier.norm).
 <p align="center">
-  <img src="figures/allCAM.png" alt="arch" width="60%">
+  <img src="figures/allCAM.png" alt="arch" width="90%">
 </p>
 
 * **Cosine similarity analysis of features for different classes using (a) VMamba, (b) G-VMamba.**
