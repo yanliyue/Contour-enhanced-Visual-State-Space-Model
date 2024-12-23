@@ -19,7 +19,7 @@ When the model classifies the scenes in the image, the G-VMamba model focuses on
 * **The overall architecture: (a) Overview of G-VMamba model; (b) Feature grouping in the G-VSS block.**
 
 <p align="center">
-  <img src="figures/overall_architecture.png" alt="arch" width="60%">
+  <img src="figures/overall_architecture.png" alt="arch" width="80%">
 </p>
 
 
