@@ -64,35 +64,40 @@ Please refer to the [code support](https://github.com/MzeroMiko/VMamba).
 ### Model Training and Inference
 
 If you only want to test the performance:
+
 ```bash
 python -m torch.distributed.launch --nnodes=1 --node_rank=0 --nproc_per_node=1 --master_port=29500 main.py --cfg </path/to/config> --batch-size 128 --data-path </path/of/dataset> --output /tmp --pretrained </path/of/checkpoint>
 ```
 
 **Train:**
+
 Training with a single GPU:
+
 ```bash
-torchrun --nnodes=1 --node_rank=0 --nproc_per_node=1 main.py --cfg configs/vssm/vssm_tiny_224.yaml --batch-size 16 --data-path ../datasets/UCMerced_LandUse --output myClassification
+torchrun --nnodes=1 --node_rank=0 --nproc_per_node=1 main.py --cfg </path/to/config> --batch-size 16 --data-path </path/of/dataset> --output </path/of/output>
 ```
 
 Training with multiple GPUs:
+
 ```bash
 export CUDA_VISIBLE_DEVICES=0,1,2,3,4
 
-torchrun --nnodes=1 --node_rank=0 --nproc_per_node=5 --master_port=29500 --rdzv_id=12345 --rdzv_backend=c10d --rdzv_endpoint=localhost:29502 main.py --cfg configs/vssm/vssm_base_224.yaml --batch-size 8 --data-path ../datasets/UCMerced_LandUse --output myClassification
+torchrun --nnodes=1 --node_rank=0 --nproc_per_node=5 --master_port=29500 --rdzv_id=12345 --rdzv_backend=c10d --rdzv_endpoint=localhost:29500 main.py --cfg </path/to/config> --batch-size 8 --data-path </path/of/dataset> --output </path/of/output>
 ```
 
 ## Citation
 
-'''
+```
 @ARTICLE{10810482,
   author={Yan, Liyue and Zhang, Xing and Wang, Kafeng and Zhang, Dejin},
   journal={IEEE Transactions on Geoscience and Remote Sensing}, 
   title={Contour-enhanced Visual State-Space Model for Remote Sensing Image Classification}, 
   year={2024}
   }
-'''
+```
 
 ## Acknowledgment
-This project is mainly based on VMamba ([paper](https://arxiv.org/abs/2401.10166), [code](https://github.com/MzeroMiko/VMamba)), Swin-Transformer ([paper](https://arxiv.org/pdf/2103.14030.pdf), [code](https://github.com/microsoft/Swin-Transformer)), pytorch-grad-cam ([code](https://github.com/jacobgil/pytorch-grad-cam)), thanks for their excellent works.
+
+This project is mainly based on VMamba ([paper](https://arxiv.org/abs/2401.10166), [code](https://github.com/MzeroMiko/VMamba)), Swin-Transformer ([paper](https://arxiv.org/pdf/2103.14030.pdf), [code](https://github.com/microsoft/Swin-Transformer)), pytorch-grad-cam ([code](https://github.com/jacobgil/pytorch-grad-cam)), etc, thanks for their excellent works.
 
 
