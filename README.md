@@ -60,6 +60,8 @@ pip install torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/wh
 **Step 3.** Install the VMamba.
 Please refer to the [code support](https://github.com/MzeroMiko/VMamba).
 
+**Step 4.** Configuring G-VMamba core components.
+Replace the contents of the *models* folder under the *classification* folder.
 
 ### Model Training and Inference
 
