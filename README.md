@@ -50,6 +50,7 @@ conda activate Gvmamba
 ```
 
 **Step 2.** Install the requirements.
+
 - Torch1.13.1 + cu116
 ```shell
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple torch==1.13.1 --extra-index-url https://download.pytorch.org/whl/cu116
@@ -58,10 +59,12 @@ pip install torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/wh
 ```
 
 **Step 3.** Install the VMamba.
+
 Please refer to the [code support](https://github.com/MzeroMiko/VMamba).
 
 **Step 4.** Configuring G-VMamba core components.
-Replace the contents of the *models* folder under the *classification* folder.
+
+Replace the contents of the <u>*models*</u> folder under the <u>*classification*</u> folder.
 
 ### Model Training and Inference
 
